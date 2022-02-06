@@ -1,13 +1,16 @@
+/*
+    NOTE: global styles are done here instead of a GlobalStyles styled-components because
+            there needs to be a particular font family and it is easier to include from 
+            a standard .css file instead of the styled-components component
+*/
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'Pixel';
+    src: url('./font/Pixel-LCD-7.woff') format('woff');
 }
